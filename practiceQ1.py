@@ -8,12 +8,12 @@ if n < 2 or n > 10:
 else:
     arr = list(map(int, input().split()))
     
-    # Check if all scores are within the valid range
+    
     if all(-100 <= score <= 100 for score in arr):
         unique_scores = list(set(arr))
         unique_scores.sort(reverse=True)
         if len(unique_scores) >= 2:
-            print(unique_scores[1])  # Runner-up score
+            print(unique_scores[1])  
         else:
             print("No runner-up score available")
     else:

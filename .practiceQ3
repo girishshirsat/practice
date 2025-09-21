@@ -1,0 +1,16 @@
+n=int(input())
+x=int(input())
+y=int(input())
+z=int(input())
+
+
+l1=[[X,Y,Z] for X in range(x+1) for Y in range(y+1) for Z in range(z+1)]
+
+l2 = [i for i in l1  if sum(i)<n ]
+
+
+print(l1)
+print(l2)
+
+
+

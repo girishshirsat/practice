@@ -1,13 +1,37 @@
-n=int(input())
+"""You are asked to ensure that the first and last names of people begin with a capital letter in their passports. For example, alison heck should be capitalised correctly as Alison Heck.
 
-# for i in range(1,n+1):
-#     for j in range(1,i+1):
-#         print("* ", end=" ")
-#     print()
 
-for i in range(1,n+1):
-    for j in range(n,1,n-1):
-        print("*", end="")
-    # for k in range(n,1,i+1):
-    #     print("*", end=" ")
-    print()
+Given a full name, your task is to capitalize the name appropriately.
+
+Input Format
+
+A single line of input containing the full name, .
+
+Constraints
+
+The string consists of alphanumeric characters and spaces.
+Note: in a word only the first character is capitalized. Example 12abc when capitalized remains 12abc.
+
+Output Format
+
+Print the capitalized string, .
+
+Sample Input
+
+chris alan
+Sample Output
+
+Chris Alan"""
+
+
+s=input()
+
+st=list(s.split(" "))
+sl=[]
+for i in st:
+    w=str(i)
+    cw=w.capitalize()
+    sl.append(cw)
+
+ts=str(sl)
+print(ts)
